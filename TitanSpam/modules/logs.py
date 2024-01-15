@@ -38,9 +38,9 @@ async def logs(legend):
         ms = (end-start).seconds
         await asyncio.sleep(1)
         await fetch.delete()
-        logfile = open("skspam.txt", "w")
+        logfile = open("TitanSpamLog.txt", "w")
         logfile.write("⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ [ BotSpam Logs ]\n\n" + logs)
         logfile.close()
-        await MK1.send_file(legend.chat_id, "skspam.txt", caption=f"⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ ‎\n☞ **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
+        await MK1.send_file(legend.chat_id, "TitanSpamLog.txt", caption=f"⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚")
     else:
         await legend.reply("☞ This Command is Only For Owner.")
