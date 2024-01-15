@@ -15,7 +15,7 @@
             "value": ".",
             "required": false
         },
-      "BOT_TOKEN1": {
+      "BOT_TOKEN": {
         "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
         "value": "",
         "required": true
