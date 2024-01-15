@@ -1,5 +1,5 @@
 build:
   docker:
-    Altron: Dockerfile
+    Titan: Dockerfile
 run:
-  Altron: python3 -m main.py
+  Titan: python3 -m main.py
