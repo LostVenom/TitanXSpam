@@ -5,8 +5,8 @@ from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
 from config import MK1, MK2, MK3, MK4, MK5 , MK6, MK7, MK8, MK9, MK10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltronX.sql.echo_sql import addecho, is_echo, remove_echo
-from AltronX.data import ALTRON
+from TitanSpam.sql.echo_sql import addecho, is_echo, remove_echo
+from TitanSpam.data import TITAN
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
@@ -20,17 +20,17 @@ from AltronX.data import ALTRON
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%secho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = f"**ᴇᴄʜᴏ**:\n  » `{hl}echo <reply to a User>`"
+  usage = f"☞ Echo :\n☞ {hl}Echo <reply to a User>"
   if event.sender_id in SUDO_USERS:
      if event.reply_to_msg_id is not None:
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
         if int(user_id) in ALTRON:
-            await event.reply("» ᴀʀᴇ.. ʏᴇ ᴛᴏ ᴛᴇʀᴀ ʙᴀᴀᴘ ʜᴀɪ", parse_mode=None, link_preview=None)
+            await event.reply("☞ 𝖳u Mar Kh𝖺𝗒𝖾𝗀𝖺 𝖡𝖾👻👻", parse_mode=None, link_preview=None)
         elif int(user_id) == OWNER_ID:
-            await event.reply("» ᴀʀᴇ.. ʏᴇ ᴛᴏ ᴛᴇʀᴀ ʙᴀᴀᴘ ʜᴀɪ", parse_mode=None, link_preview=None)
+            await event.reply("☞ 𝖳u Mar Kh𝖺𝗒𝖾𝗀𝖺 𝖡𝖾👻👻", parse_mode=None, link_preview=None)
         elif int(user_id) in SUDO_USERS:
-            await event.reply("» ᴀʙᴇ.. ʏᴇ sᴜᴅᴏ ʟᴇᴋᴀʀ ʙᴀɪᴛʜᴀ ʜᴀɪ", parse_mode=None, link_preview=None)
+            await event.reply("☞ 𝖠𝖻𝖾 𝖸𝖾 𝖲𝗎𝖽𝗈 𝖶𝖺𝗅𝖺 𝗁𝖺𝗂 𝖡𝗁𝗎𝗍 𝖬𝖺𝗋𝖾𝗀𝖺 👻👻", parse_mode=None, link_preview=None)
         else:
             chat_id = event.chat_id
             try:
@@ -39,10 +39,10 @@ async def echo(event):
             except BaseException:
                 pass
             if is_echo(user_id, chat_id):
-                await event.reply("» ᴇᴄʜᴏ ᴘʜʟᴇ sᴇ ʟᴀɢᴀ ʜᴜᴀ ʜᴀɪ.. ʜᴇʜᴇʜᴇ !!")
+                await event.reply("☞ 𝖤𝖼𝗁𝗈 𝖮𝗇 𝗁𝖺𝗂 𝖻𝖾 👻👻")
                 return
             addecho(user_id, chat_id)
-            await event.reply("» ᴇᴄʜᴏ ʟᴀɢ ɢʏᴀ! ʜᴀʜᴀʜᴀ!! ✅")
+            await event.reply("☞ 𝖠𝖺𝖻 𝗐𝗈 𝖯𝖺𝗀𝖺𝗅 𝗁𝗈 𝖩𝖺𝗒𝖾𝗀𝖺 👻👻")
      else:
           await event.reply(usage)
 
@@ -58,7 +58,7 @@ async def echo(event):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def rmecho(event):
-  usage = f"**ʀᴇᴍᴏᴠᴇ ᴇᴄʜᴏ**:\n  » `{hl}rmecho <reply to a User>`"
+  usage = f"☞ Remove Echo:\n☞ {hl}rmecho <reply to a User>"
   if event.sender_id in SUDO_USERS:
      if event.reply_to_msg_id is not None:
         reply_msg = await event.get_reply_message()
@@ -71,9 +71,9 @@ async def rmecho(event):
             pass
         if is_echo(user_id, chat_id):
             remove_echo(user_id, chat_id)
-            await event.reply("» ᴜғғ ʏʀʀ!! ᴇᴄʜᴏ ʜᴛᴛ ɢʏᴀ ☑️")
+            await event.reply("☞ 𝖧𝗎𝗎𝗁 💨 𝖠𝖺𝖻 𝖲𝗁𝖺𝗇𝗍𝗂 𝖬𝗂𝗅𝗂")
         else:
-            await event.reply("» ᴇᴄʜᴏ ᴛᴏ ᴋᴀʙᴋᴀ ʜᴀᴛᴛ ɢʏᴀ.. ᴜ ғᴏᴏʟ !!")
+            await event.reply("☞ 𝖤𝖼𝗁𝗈 𝖭𝖺𝗁𝗂 𝖫𝖺𝗀𝖺 𝗁𝖺𝗂 𝖻𝖾 👻👻")
      else:
           await event.reply(usage)
 
