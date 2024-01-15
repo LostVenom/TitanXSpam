@@ -2,7 +2,7 @@ from config import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
 from telethon import events, Button
 
 
-PythonHelp = f"★ ​𝗢𝗣𝘀𝗽𝗮𝗺 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: @itsz_shivam**"
+PythonHelp = f"☞ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖬𝖾𝗇𝗎\n\n⧉  𝖳𝖺𝗉 𝗈𝗇 𝖡𝖾𝗅𝗈𝗐 𝖡𝗎𝗍𝗍𝗈𝗇𝗌 𝖳𝗈 𝖫𝖾𝖺𝗋𝗇 𝖬𝗈𝗋𝖾📄 𝖠𝖻𝗈𝗎𝗍 𝖡𝗈𝗍 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌."
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
@@ -18,92 +18,74 @@ PythonHelp = f"★ ​𝗢𝗣𝘀𝗽𝗮𝗺 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪
 async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
-                                  " https://telegra.ph/file/0de98f5fe87df8e6b514d.jpg",
+                                  "https://telegra.ph/file/46b2748409590033743a4.jpg",
                                   caption=PythonHelp,
                                   buttons=[
            [
-            Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
-            Button.inline("• ʀᴀɪᴅ •", data="raid"),
+            Button.inline("👻 sᴘᴀᴍ 👻", data="spam"),
+            Button.inline("☠️ ʀᴀɪᴅ ☠️", data="raid"),
            ],
            [
-            Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
-           ],
-           [    
-            Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/about_skshivam"),
-            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/fun_here")
+            Button.inline("🕷 ᴍᴏʀᴇ 🕷", data="extra"),
            ],
            ],
            )
 
 
 extra_msg = f"""
-**» ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:**
+☞ 𝖬𝗈𝗋𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
 
-𝗨𝘀𝗲𝗿𝗕𝗼𝘁: ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ
-  1) {hl}ping 
-  2) {hl}reboot
-  3) {hl}sudo <reply to user>  --> Owner Cmd
-  4) {hl}logs --> Owner Cmd
+✧𝖡𝗈𝗍 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
+  1) {hl}ping ~ 𝖳𝗈 𝖢𝗁𝖾𝖼𝗄 𝖡𝗈𝗍 𝖠𝗅𝗂𝗏𝖾 𝗈𝗋 𝖣𝖾𝖺𝖽.
+  2) {hl}reboot ~ 𝖳𝗈 𝖱𝖾𝗌𝗍𝖺𝗋𝗍 𝗍𝗁𝖾 𝖡𝗈𝗍.
 
-𝗘𝗰𝗵𝗼: ᴛᴏ ᴀᴄᴛɪᴠᴇ ᴇᴄʜᴏ ᴏɴ ᴀɴʏ ᴜꜱᴇʀ
-  1) {hl}echo <reply to user>
-  2) {hl}rmecho <reply to user>
+✧𝖤𝖼𝗁𝗈 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
+  1) {hl}echo ~ 𝖳𝗈 𝖲𝗍𝖺𝗋𝗍 𝖤𝖼𝗁𝗈.
+  2) {hl}rmecho ~ 𝖳𝗈 𝖲𝗍𝗈𝗉 𝖤𝖼𝗁𝗈.
 
-𝗟𝗲𝗮𝘃𝗲: ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
-  1) {hl}leave <group/chat id>
-  2) {hl}leave : Type in the Group bot will auto leave that group
+✧𝖫𝖾𝖺𝗏𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
+  1) {hl}leave ~ 𝖳𝗈 𝖫𝖾𝖺𝗏𝖾 𝖦𝗋𝗈𝗎𝗉/𝖢𝗁𝖺𝗇𝗇𝖾𝗅.
 
-
-**© @itsz_shivam**
+✧𝖮𝗐𝗇𝖾𝗋 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
+  1) {hl}sudo ~ 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖲𝗎𝖽𝗈 𝖴𝗌𝖾𝗋𝗌.
+  2) {hl}logs ~ 𝖥𝗈𝗋 𝖡𝗈𝗍 𝖫𝗈𝗀𝗌.
 """
 
                  
 raid_msg = f"""
-**» ʀᴀɪᴅ ᴄᴏᴍᴍᴀɴᴅꜱ:**
+☞ 𝖱𝖺𝗂𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
 
-𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ɪɴᴅɪᴠɪᴅᴜᴀʟ ᴜꜱᴇʀ ꜰᴏʀ ɢɪᴠᴇɴ ʀᴀɴɢᴇ.
-  1) {hl}raid <count> <username>
-  2) {hl}raid <count> <reply to user>
+✧ 𝖱𝖺𝗂𝖽 :
+  1) {hl}raid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.
 
-𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
-  1) {hl}rraid <replying to user>
-  2) {hl}rraid <username>
+✧ 𝖱𝖾𝗉𝗅𝗒𝗋𝖺𝗂𝖽 :
+  1) {hl}rraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.
+  2) {hl}drraid <count><username/reply> ~ 𝖲𝗍𝗈𝗉𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖴𝗌𝖾𝗋.
 
-𝗗𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱: ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇꜱ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
-  1) {hl}drraid <replying to user>
-  2) {hl}drraid <username>
+✧ 𝖫𝗈𝗏𝖾 𝖱𝖺𝗂𝖽 :
+  1) {hl}mraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖫𝗈𝗏𝖾 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.
 
-𝐌𝐑𝐚𝐢𝐝: ʟᴏᴠᴇ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
-  1) {hl}mraid <count> <username>
-  2) {hl}mraid <count> <reply to user>
+✧ 𝖲𝗁𝖺𝗒𝖺𝗋𝗂 𝖱𝖺𝗂𝖽 :
+  1) {hl}sraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗁𝖺𝗒𝖺𝗋𝗂 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.
 
-𝐒𝐑𝐚𝐢𝐝: ꜱʜᴀʏᴀʀɪ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
-  1) {hl}sraid <count> <username>
-  2) {hl}sraid <count> <reply to user>
-
-𝐂𝐑𝐚𝐢𝐝: ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
-  1) {hl}craid <count> <username>
-  2) {hl}craid <count> <reply to user>
-
-
-**© @itsz_shivam**
+✧ 𝖫𝖾𝗍𝗍𝖾𝗋 𝖱𝖺𝗂𝖽 : 
+  1) {hl}craid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖱𝖺𝗇𝖽𝗈𝗆 𝖱𝖾𝗉𝖾𝖺𝗍𝖾𝖽 𝖫𝖾𝗍𝗍𝖾𝗋𝗌 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.
 """
 
 spam_msg = f"""
-**» ꜱᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅꜱ:**
+☞ 𝖲𝗉𝖺𝗆 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :
 
-𝗦𝗽𝗮𝗺: ꜱᴘᴀᴍꜱ ᴀ ᴍᴇꜱꜱᴀɢᴇ.
-  1) {hl}spam <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)
-  2) {hl}spam <count> <replying any message>
+✧ 𝖲𝗉𝖺𝗆 :
+  1) {hl}spam <count><message to spam> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗉𝖺𝗆𝗆𝗂𝗇𝗀 𝗀𝗂𝗏𝖾𝗇 𝖬𝖾𝗌𝗌𝖺𝗀𝖾.
 
-𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺: ᴘᴏʀᴍᴏɢʀᴀᴘʜʏ ꜱᴘᴀᴍ.
-  1) {hl}pspam <count>
+✧ 𝖯𝗈𝗋𝗇 𝖲𝗉𝖺𝗆 :
+  1) {hl}pspam <count> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗉𝖺𝗆𝗆𝗂𝗇𝗀 𝖯𝗈𝗋𝗇𝗈𝗋𝖺𝗉𝗁𝗒 𝖢𝗈𝗇𝗍𝖾𝗇𝗍𝗌.
 
-𝗛𝗮𝗻𝗴: ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.
-  1) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
+✧ 𝖧𝖺𝗇𝗀 𝖲𝗉𝖺𝗆 :
+  1) {hl}hang <count> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗉𝖺𝗆𝗆𝗂𝗇𝗀 𝖣𝖾𝗏𝗂𝖼𝖾 𝖥𝗋𝖾𝖾𝗓𝗂𝗇𝗀 𝖬𝖾𝗌𝗌𝖺𝗀𝖾.
 
-
-** © @itsz_shivam**
+# 𝖭𝗈𝗍𝖾 :- 
+𝖸𝗈𝗎 𝖼𝖺𝗇 𝖺𝗅𝗌𝗈 𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺𝗇𝗒 𝗆𝖾𝗌𝗌𝖺𝗀𝖾 𝗂𝖿 𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝗌𝗉𝖺𝗆 𝗈𝗇 𝗋𝖾𝗉𝗅𝗒 𝗈𝖿 𝗍𝗁𝖺𝗍 𝗆𝖾𝗌𝗌𝖺𝗀𝖾.
 """                     
            
            
@@ -123,20 +105,16 @@ async def helpback(event):
             PythonHelp,
             buttons=[
            [
-            Button.inline("• ꜱᴘᴀᴍ •", data="spam"),
-            Button.inline("• ʀᴀɪᴅ •", data="raid"),
+            Button.inline("👻 sᴘᴀᴍ 👻", data="spam"),
+            Button.inline("☠️ ʀᴀɪᴅ ☠️", data="raid"),
            ],
            [
-            Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
-           ],
-           [
-            Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/about_skshivam"),
-            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/fun_here")
+            Button.inline("🕷 ᴍᴏʀᴇ 🕷", data="extra"),
            ],
            ],
         )           
    else:
-        await event.answer("Pahle jaake baap bol SPECTRE ko wo tumhe sudo de dega", cache_time=0, alert=True)
+        await event.answer("Visit @TitanXSupport for Sudo to Start Spamming.", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"spam"))
@@ -152,10 +130,10 @@ async def helpback(event):
 async def help_spam(event):
    if event.query.user_id in SUDO_USERS:    
        await event.edit(spam_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline("🔙", data="help_back"),],],
             ) 
    else:
-        await event.answer("Pahle jaake baap bol SPECTRE ko wo tumhe sudo de dega", cache_time=0, alert=True)
+        await event.answer("Visit @TitanXSupport for Sudo to Start Spamming.", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"raid"))
@@ -171,10 +149,10 @@ async def help_spam(event):
 async def help_raid(event):
      if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline("🔙", data="help_back"),],],
             )  
      else:
-        await event.answer("Pahle jaake baap bol SPECTRE ko wo tumhe sudo de dega", cache_time=0, alert=True)
+        await event.answer("Visit @TitanXSupport for Sudo to Start Spamming.", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"extra"))
@@ -190,7 +168,7 @@ async def help_raid(event):
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
-            buttons=[[Button.inline("< Back", data="help_back"),],],
+            buttons=[[Button.inline("🔙", data="help_back"),],],
             )
    else:
-        await event.answer("Pahle jaake baap bol SPECTRE ko wo tumhe sudo de dega", cache_time=0, alert=True)
+        await event.answer("Visit @TitanXSupport for Sudo to Start Spamming.", cache_time=0, alert=True)
