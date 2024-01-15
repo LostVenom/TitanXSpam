@@ -154,7 +154,7 @@ async def _(e):
         AltX = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
 
         if len(e.text) > 12:
-            message = str(AltX[0])
+            message = str(TitanX[0])
             a = await e.client.get_entity(message)
             g = a.id
             try:
