@@ -1,21 +1,21 @@
 {
-    "name": "PythonX HERE.",
-    "logo": "https://telegra.ph/file/0de98f5fe87df8e6b514d.jpg",
+    "name": "Titan Spam.",
+    "logo": "https://telegra.ph/file/c4c411b7968c06b606395.jpg",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "PythonX",
+        "Titan",
         "SpamBots"
     ],
-    "repository": "https://github.com/itszshivam/SK_spambot",
+    "repository": "https://github.com/PIRATE303/TitanSpams",
     "env": {
      "CMD_HNDLR": {
-            "description": "Custom command handler.",
+            "description": "Command Handler.",
             "value": ".",
             "required": false
         },
-      "BOT_TOKEN": {
+      "BOT_TOKEN1": {
         "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
         "value": "",
         "required": true
