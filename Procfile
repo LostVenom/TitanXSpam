@@ -1,1 +1,1 @@
-Altron: python -m main.py
+Titan: python -m main.py
