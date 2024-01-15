@@ -9,7 +9,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "AltronX/modules/*.py"
+path = "TitanSpam/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -17,7 +17,7 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("\nOPSHIVAM 𝐒𝐩𝐚𝐦 𝐁𝐨𝐭𝐬 𝐃𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 😎🤘🏻\nMy Master ---> @itsz_shivam")
+print("\n⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ ‎ 𝖣𝖾𝗉𝗅𝗈𝗒𝖾𝖽 𝖲𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 👻👻")
 
 
 async def main():
