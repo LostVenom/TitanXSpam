@@ -25,7 +25,7 @@ async def echo(event):
      if event.reply_to_msg_id is not None:
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
-        if int(user_id) in ALTRON:
+        if int(user_id) in TITAN:
             await event.reply("☞ 𝖳u Mar Kh𝖺𝗒𝖾𝗀𝖺 𝖡𝖾👻👻", parse_mode=None, link_preview=None)
         elif int(user_id) == OWNER_ID:
             await event.reply("☞ 𝖳u Mar Kh𝖺𝗒𝖾𝗀𝖺 𝖡𝖾👻👻", parse_mode=None, link_preview=None)
