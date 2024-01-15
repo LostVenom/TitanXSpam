@@ -33,14 +33,14 @@ async def logs(legend):
             )
         logs = app.get_log()
         start = datetime.now()
-        fetch = await legend.reply(f"» __Fetching Logs...__")
+        fetch = await legend.reply(f"☞ Fetching Logs...")
         end = datetime.now()
         ms = (end-start).seconds
         await asyncio.sleep(1)
         await fetch.delete()
         logfile = open("skspam.txt", "w")
-        logfile.write("⚡ OPshivamX ⚡ [ BotSpam Logs ]\n\n" + logs)
+        logfile.write("⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ [ BotSpam Logs ]\n\n" + logs)
         logfile.close()
-        await MK1.send_file(legend.chat_id, "skspam.txt", caption=f"⚡ ​ᴏᴘꜱʜɪᴠᴀᴍ ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
+        await MK1.send_file(legend.chat_id, "skspam.txt", caption=f"⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ ‎\n☞ **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
     else:
-        await legend.reply("» ꜱᴏʀʀʏ, ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.")
+        await legend.reply("☞ This Command is Only For Owner.")
