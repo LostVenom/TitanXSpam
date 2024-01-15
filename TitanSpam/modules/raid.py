@@ -96,7 +96,7 @@ async def _(event):
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 async def _(e):
     global que
-    usage = f"☞  𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :\n\n1) {hl}rraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.\n2) {hl}drraid <count><username/reply> ~ 𝖲𝗍𝗈𝗉𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖴𝗌𝖾𝗋."
+    usage = f"☞ 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :\n\n1) {hl}rraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.\n2) {hl}drraid <count><username/reply> ~ 𝖲𝗍𝗈𝗉𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖴𝗌𝖾𝗋."
     if e.sender_id in SUDO_USERS:
         mkrr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 11:
@@ -147,7 +147,7 @@ async def _(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 async def _(e):
-    usage = f"☞  𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :\n\n1) {hl}rraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.\n2) {hl}drraid <count><username/reply> ~ 𝖲𝗍𝗈𝗉𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖴𝗌𝖾𝗋.
+    usage = f"☞ 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :\n\n1) {hl}rraid <count><username/reply> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖠𝗇𝗒 𝖴𝗌𝖾𝗋.\n2) {hl}drraid <count><username/reply> ~ 𝖲𝗍𝗈𝗉𝗌 𝖠𝖻𝗎𝗌𝗂𝗏𝖾 𝖱𝖾𝗉𝗅𝗒 𝖱𝖺𝗂𝖽 𝗈𝗇 𝖴𝗌𝖾𝗋."
 "
     global que    
     if e.sender_id in SUDO_USERS:
