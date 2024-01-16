@@ -33,7 +33,7 @@ from TitanSpam.data import GROUP, PORMS
 async def spam(e):
     usage = f"☞ 𝖲𝗉𝖺𝗆 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :\n\n1) {hl}spam <count><message to spam> ~ 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗉𝖺𝗆𝗆𝗂𝗇𝗀 𝗀𝗂𝗏𝖾𝗇 𝖬𝖾𝗌𝗌𝖺𝗀𝖾."
     if e.sender_id in SUDO_USERS:
-        altron = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        titan = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         mk = await e.get_reply_message()
 
         if len(titan) == 2:
@@ -73,7 +73,7 @@ async def pspam(e):
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        altron = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        titan = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(titan) == 1:
             counter = int(titan[0])
             if int(e.chat_id) in GROUP:
