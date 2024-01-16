@@ -5,10 +5,7 @@ import telethon
 
 PythonButton = [
         [
-        Button.inline("🕸 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ 🕸", url=f"tg://user?id={BotId}?startgroup=true")
-        ],
-        [
-        Button.url("🛠 ᴄᴏᴍᴍᴀɴᴅs 🛠", data="help_back")
+        Button.inline("⚚‎ ˹𝐓𝐈𝐓𝚲𝐍 𔘓 𝐍𝚵𝐓𝐖Ⓞ𝐑𝐊˼ ⚚ ", data="help_back")
         ],
         [
         Button.url("🔎 sᴜᴘᴘᴏʀᴛ 🔍", "https://t.me/TitanXSupport"),
