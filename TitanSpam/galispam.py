@@ -113,7 +113,6 @@ async def _(event):
         await hellbot.send_message(chat, "MERAA NAJAYAZ�不")
         await hellbot.send_message(chat, "BETA HAI TUU")
 
-
 CmdHelp("galispam").add_command(
     "galispam", None, "Start Gaali Spam!"
 ).add_command(
