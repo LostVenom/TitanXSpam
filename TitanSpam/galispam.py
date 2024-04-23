@@ -116,7 +116,6 @@ async def _(event):
 
 
 
-
 CmdHelp("galispam").add_command(
     "galispam", None, "Start Gaali Spam!"
 ).add_command(
