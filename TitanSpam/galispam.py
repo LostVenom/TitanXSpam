@@ -3,7 +3,6 @@ global x
 
 
 
-
 @hell_cmd(pattern="stopgalispam$")
 async def _(event):
     await eor(event, "Stopped Gaali Spam!")
