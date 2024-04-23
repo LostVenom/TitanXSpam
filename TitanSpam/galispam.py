@@ -1,5 +1,4 @@
 from . import *
-
 global x
 
 @hell_cmd(pattern="stopgalispam$")
