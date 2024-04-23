@@ -5,7 +5,24 @@ from pyrogram import Client, filters
 from pyrogram.enums import MessageEntityType as MET, ChatAction as CA
 from pyrogram.types import Message
 
+rqjhejkqadf
+f
+ad
+faf
 
+a
+ffadad
+dd
+d
+d
+d
+
+dadas
+d
+afasfsfsd
+sd
+sdf
+f
 from . import *
 
 RAID_STR = [
