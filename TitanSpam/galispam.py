@@ -1,11 +1,18 @@
 from . import *
 global x
 
+
+
+
 @hell_cmd(pattern="stopgalispam$")
 async def _(event):
     await eor(event, "Stopped Gaali Spam!")
     global x
     x = False
+
+
+
+
 
 @hell_cmd(pattern="galispam$")
 async def _(event):
@@ -112,6 +119,10 @@ async def _(event):
         await hellbot.send_message(chat, "MAIN HI HUINN")
         await hellbot.send_message(chat, "MERAA NAJAYAZ�不")
         await hellbot.send_message(chat, "BETA HAI TUU")
+
+
+
+
 
 
 CmdHelp("galispam").add_command(
