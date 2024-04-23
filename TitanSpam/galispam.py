@@ -8,7 +8,6 @@ async def _(event):
     x = False
 
 
-
 @hell_cmd(pattern="galispam$")
 async def _(event):
     global x
